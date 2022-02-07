@@ -5,7 +5,9 @@ This plugin is a fork of [christoomey's vim-tmux-navigator](https://github.com/c
 
 This fork also remove the auto-cycling behavior for tmux as I found it to be confusing
 
-**HOW?**
+**How?**
+1. Add edge detection to tmux navigation
+2. Add check if running process is ssh
 
 Usage
 -----
