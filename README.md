@@ -7,7 +7,14 @@ This fork also remove the auto-cycling behavior for tmux as I found it to be con
 
 **How?**
 1. Add edge detection to tmux navigation
-2. Add check if running process is ssh
+2. Add check if running process is ssh. Pass keystroke if it is.
+
+This way, it is up to the tmux inside the ssh session to interpret the keystrokes.
+
+There are a few conventions to follow to make this effective for nesting tmux.
+1. inner tmux should not have tabs
+2. remove inner tmux status bar for cleaner look
+3. outer tmux with an ssh proccess running should not have split pane.
 
 Usage
 -----
